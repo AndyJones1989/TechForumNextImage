@@ -10,7 +10,7 @@ const FooterItem = ({label}:{label:string}) => {
 
 const Footer = () => {
     return(
-        <Box sx={{display: 'flex', color: 'white', backgroundColor: '#403e3b', justifyContent: 'space-around'}}>
+        <Box sx={{display: 'flex', color: 'white', backgroundColor: '#403e3b', justifyContent: 'space-around', flexDirection: {xs: 'column', sm: 'row'}}}>
             <FooterItem label='Corporate Partnerships'/>
             <FooterItem label='Careers'/>
             <FooterItem label='Contact Us'/>

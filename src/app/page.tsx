@@ -1,7 +1,8 @@
-import Banner from "@/components/banner"
-import Footer from "@/components/footer"
-import Gallery from "@/components/gallery"
-import { Header } from "@/components/header"
+/* eslint-disable react/no-unescaped-entities */
+import Banner from "@/components/initial/banner"
+import Footer from "@/components/initial/footer"
+import Gallery from "@/components/initial/gallery"
+import { Header } from "@/components/initial/header"
 import { Card, CardMedia, CardContent, Typography } from "@mui/material"
 
 
