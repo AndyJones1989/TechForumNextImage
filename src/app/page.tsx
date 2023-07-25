@@ -1,95 +1,28 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Banner from "@/components/banner"
+import Footer from "@/components/footer"
+import Gallery from "@/components/gallery"
+import { Header } from "@/components/header"
+import { Card, CardMedia, CardContent, Typography } from "@mui/material"
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <>
+    <Header />
+    <Banner/>
+    <Gallery/>
+    <Card sx={{ maxWidth: '75%', margin: '50px auto' }}>
+      <CardMedia sx={{objectFit: 'cover', height: '180px'}} component="img"
+      image='https://eu.cdn.autosonshow.tv/2665/retail/LN22USS/e07_md.jpg'/>
+      <CardContent>
+        <Typography gutterBottom variant="h4" component="div" sx={{textAlign: 'center'}}>
+          Compensate for your lack of charisma with a fast car</Typography>
+          <Typography variant="body1" color="text.secondary">
+            Be a better version of yourself. Let us help you unlock your potential with a fast car. You'll look younger, feel better and be more popular. Instantly. Are you a confident, successful person? Well nobody will know that unless you have a fast car. We can help you with that.
+    </Typography>
+    </CardContent>
+    </Card>
+    <Footer/>
+    </>
   )
 }
