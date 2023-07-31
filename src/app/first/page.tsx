@@ -16,7 +16,11 @@ export default function Page() {
     <Gallery/>
     <Card sx={{ maxWidth: '75%', margin: '50px auto' }}>
         <Box sx={{ height: {xs: '100px', sm: '200px'}, overflow: 'hidden', maxWidth: '100%'}}>
-      <Image src='https://arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/IO5UFIXGPNAELCVFX725HNXOKM.jpg' alt='fast car' width={3000} height={1500} style={{objectFit: 'fill', objectPosition: '0px -100px', maxWidth: '100%', height: 'auto'}}/>
+      <Image src='https://arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/IO5UFIXGPNAELCVFX725HNXOKM.jpg'
+      alt='fast car' 
+      width={3000} 
+      height={1500} 
+      style={{objectFit: 'fill', objectPosition: '0px -100px', maxWidth: '100%', height: 'auto'}}/>
       </Box>
       <CardContent>
         <Typography gutterBottom variant="h4" component="div" sx={{textAlign: 'center', objectPosition: 'center'}}>
