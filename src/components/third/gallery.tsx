@@ -15,7 +15,6 @@ const Gallery = async () => {
         return await generateBlur(item.img);
       })
     );
-    console.log(blurs);
     return blurs;
   };
   const blurArray = await generateBlurs();

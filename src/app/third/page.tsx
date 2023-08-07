@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+"use server";
+
 import Banner from "@/components/third/banner";
 import Footer from "@/components/third/footer";
 import Gallery from "@/components/third/gallery";
